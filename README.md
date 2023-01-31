@@ -16,8 +16,12 @@ Heroku
 
 
 Credits
+https://expressjsnotetaker.herokuapp.com/
+
 git@github.com:EdwinHdz04/Express.js-Note-Taker.git
+
 https://github.com/EdwinHdz04/Express.js-Note-Taker.git
+
 
 License
 MIT License
