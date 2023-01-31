@@ -18,9 +18,9 @@ router.post('/notes', (req, res) =>{
 })
 
 router.delete('/notes/:id',  (req, res) => {
-    .addNote(req.body)
-    .then((note) => res.json(note))
-    .catch((err) => res.status(500).json(err))
+        .addNote(req.body)
+        .then((note) => res.json(note))
+        .catch((err) => res.status(500).json(err))
 
 })
 
