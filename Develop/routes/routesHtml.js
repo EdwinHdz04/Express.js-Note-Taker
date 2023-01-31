@@ -1,4 +1,3 @@
-const { route } = require('./routesAPI')
 
 const path = request('path')
 const router = require ('express').Router()

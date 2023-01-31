@@ -1,4 +1,4 @@
-//methods in 
+//methods
 const util = require('util');
 const fs = require('fs');
 const uuid= require('uuid/v1');
@@ -16,7 +16,7 @@ class Store{
     }
 
     getNotes(){
-        return this.read().then((note)) => {
+        return this.read().then((notes) =>{
             let parsedNotes;
 
             try{
@@ -26,7 +26,7 @@ class Store{
             }
             return parsedNotes;
 
-        }
+        })
     }
 
     addNote(note){
@@ -45,7 +45,7 @@ class Store{
 
     removeNote(id){
         return this.getNotes()
-        .then() => notes.filter((note=> note.id !=id ))
+        .then((notes) => notes.filter((note)=> note.id !=id ))
         .then((filteredNotes) => this.write(filteredNotes));
     }
 }
